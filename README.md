@@ -1,4 +1,4 @@
-# OmniAuth::Amazon MWS
+# OmniAuth::Amazon Marketplace
 
 Manage multiple seller accounts by allowing them to connect their accounts to your application. 
 
@@ -6,7 +6,7 @@ Manage multiple seller accounts by allowing them to connect their accounts to yo
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-amazon-mws'
+    gem 'omniauth-amazon-marketplace'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-amazon-mws
+    $ gem install omniauth-amazon-marketplace
 
 ## Prereqs
 
