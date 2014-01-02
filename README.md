@@ -20,8 +20,8 @@ Or install it yourself as:
 
 You must create an application via the [Amazon App Console](https://login.amazon.com/manageApps). Once that is complete, register two URLs under the <i>Web Settings</i>:
 
-    http://localhost:3000/auth/amazon-marketplace/callback
-    http://your_website_here/auth/amazon-marketplace/callback
+    http://localhost:3000/auth/amazon_marketplace/callback
+    http://your_website_here/auth/amazon_marketplace/callback
 
 ## Usage
 
@@ -29,7 +29,7 @@ The merchant will be taken to a URL generated from the developer credentials you
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :amazon-mws, ENV['APP_ID'], ENV['AWS_ACCESS_KEY'], ENV['AWS_SECRET_ACCESS_KEY']
+  provider :amazon_mws, ENV['APP_ID'], ENV['AWS_ACCESS_KEY'], ENV['AWS_SECRET_ACCESS_KEY']
 end
 ```
 
