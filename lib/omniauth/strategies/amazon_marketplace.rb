@@ -3,9 +3,10 @@ module OmniAuth
     class AmazonMarketplace
       include OmniAuth::Strategy
 
-      args [:app_id, :aws_key, :secret_key]
-
       option :name, 'amazon_marketplace'
+
+      args [:app_id, :aws_key, :secret_key]
+      
       option :app_id, nil
       option :aws_key, nil
       option :secret_key, nil
@@ -29,7 +30,7 @@ module OmniAuth
         @response = request.params
         super
       rescue => ex
-        fail!("Failed to retrieve user info from ebay", ex)
+        fail!("Failed to retrieve user info from Amazon", ex)
       end
 
       def raw_info
@@ -47,7 +48,7 @@ module OmniAuth
           :AWSAccessKeyId => options.aws_key,
           :SignatureMethod => 'HmacSHA256',
           :SignatureVersion => 2,
-          :returnPathAndParameters => options.return_path
+          :returnPathAndParameters => callback_path
         }
 
         params[:Signature] = amazon_signature_v2( params, url, options.secret_key )
