@@ -1,4 +1,4 @@
-# OmniAuth::Amazon Marketplace
+# OmniAuth::Amazon Marketplace Web Services (MWS)
 
 Manage multiple seller accounts by allowing them to connect their accounts to your application. 
 
