@@ -1,9 +1,9 @@
 module OmniAuth
   module Strategies
-    class AmazonMarketplace
+    class Amazon
       include OmniAuth::Strategy
 
-      option :name, 'amazon_marketplace'
+      option :name, 'amazon'
 
       args [:app_id, :aws_key, :secret_key]
       

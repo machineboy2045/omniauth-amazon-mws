@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::AmazonMarketplace do
+describe OmniAuth::Strategies::Amazon do
   subject do
     @options = {
       app_id: 'myappidissecret',
       aws_key: 'opensesame',
       secret_key: 'shazam',
     }
-    strategy = OmniAuth::Strategies::AmazonMarketplace.new('will', @options[:app_id], @options[:aws_key], @options[:secret_key])
+    strategy = OmniAuth::Strategies::Amazon.new('will', @options[:app_id], @options[:aws_key], @options[:secret_key])
     strategy.stub(:session) { {  } }
     strategy
   end
@@ -19,7 +19,7 @@ describe OmniAuth::Strategies::AmazonMarketplace do
   end
 
   it 'should have the correct callback path' do
-    expect(subject.callback_path).to eq('/auth/amazon_marketplace/callback')
+    expect(subject.callback_path).to eq('/auth/amazon/callback')
   end
 
   it "should create a valid activation URL" do
@@ -29,8 +29,8 @@ describe OmniAuth::Strategies::AmazonMarketplace do
                     "SignatureMethod"=>"HmacSHA256",
                     "SignatureVersion"=>"2",
                     "id"=>"myappidissecret",
-                    "returnPathAndParameters"=>"/auth/amazon_marketplace/callback",
-                    "Signature"=>"HYpoYISDugk7fC0z3EbQxZ7IJARwOZdBQJHTfloft/M="})
+                    "returnPathAndParameters"=>"/auth/amazon/callback",
+                    "Signature"=>"nr4QcQx4S0TZsCSp4zwNm+Y51rYuthFvCXC+Sep08lA="})
   end
 
 end

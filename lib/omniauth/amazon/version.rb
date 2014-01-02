@@ -1,5 +1,5 @@
 module OmniAuth
-  module AmazonMarketplace
+  module Amazon
     VERSION = "0.0.1"
   end
 end

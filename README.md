@@ -6,7 +6,7 @@ Manage multiple seller accounts by allowing them to connect their accounts to yo
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-amazon-marketplace'
+    gem 'omniauth-amazon'
 
 And then execute:
 
@@ -14,14 +14,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-amazon-marketplace
+    $ gem install omniauth-amazon
 
 ## Prereqs
 
 You must create an application via the [Amazon App Console](https://login.amazon.com/manageApps). Once that is complete, register two URLs under the <i>Web Settings</i>:
 
-    http://localhost:3000/auth/amazon_marketplace/callback
-    http://your_website_here/auth/amazon_marketplace/callback
+    http://localhost:3000/auth/amazon/callback
+    http://your_website_here/auth/amazon/callback
 
 ## Usage
 

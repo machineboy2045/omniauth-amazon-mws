@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'omniauth/amazon-marketplace/version'
+require 'omniauth/amazon/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-amazon-marketplace"
-  spec.version       = OmniAuth::AmazonMarketplace::VERSION
+  spec.name          = "omniauth-amazon"
+  spec.version       = OmniAuth::Amazon::VERSION
   spec.authors       = ["Will Jensen"]
   spec.email         = ["machineboy2045@gmail.com"]
   spec.description   = %q{Login with Amazon MWS for OmniAuth 1.0}
   spec.summary       = %q{Login with Amazon MWS strategy for OmniAuth 1.0}
-  spec.homepage      = "https://github.com/machineboy2045/omniauth-amazon-marketplace"
+  spec.homepage      = "https://github.com/machineboy2045/omniauth-amazon"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
