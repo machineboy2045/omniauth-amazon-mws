@@ -6,7 +6,7 @@ Manage inventory for multiple sellers by connecting their accounts to your appli
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-amazon'
+    gem 'omniauth-amazon-marketplace'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-amazon
+    $ gem install omniauth-amazon-marketplace
 
 ## Prereqs
 
@@ -29,6 +29,6 @@ The merchant will be taken to a URL generated from the developer credentials you
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :amazon_mws, ENV['APP_ID'], ENV['AWS_ACCESS_KEY'], ENV['AWS_SECRET_ACCESS_KEY']
+  provider :amazon, ENV['APP_ID'], ENV['AWS_ACCESS_KEY'], ENV['AWS_SECRET_ACCESS_KEY']
 end
 ```

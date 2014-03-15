@@ -15,8 +15,9 @@ module OmniAuth
 
       info do
         {
-          'merchant' => raw_info[:Merchant],
-          'marketplace' => raw_info[:Marketplace]
+          'seller_id' => raw_info['Merchant'],
+          'marketplace_id' => raw_info['Marketplace'],
+          'raw_info' => raw_info
         }
       end
 
